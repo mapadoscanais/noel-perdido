@@ -15,17 +15,19 @@ main{padding:0 16px 16px;max-width:760px;margin:auto}
 .lista h2{font-size:17px;margin:12px 0 4px}.lista span{display:inline-block;background:#fff;border:1px solid #ccc;border-radius:99px;padding:3px 10px;margin:2px;font-size:14px}.lista .f{opacity:.5}
 button{background:var(--g);color:#fff;border:0;border-radius:12px;padding:12px 18px;font-size:16px;font-weight:700;width:100%;margin:8px 0}
 .fim{background:var(--r);color:#fff;border-radius:14px;padding:14px;text-align:center;font-weight:700;margin:10px 0}
+.ext{background:var(--g);color:#fff;border-radius:14px;padding:12px;text-align:center;font-weight:700;margin:10px 0}.selo{font-size:11px;background:var(--g);color:#fff;border-radius:99px;padding:1px 7px;font-weight:700}
 .aviso{font-size:13px;text-align:center;opacity:.8}
 </style></head><body>
-<header><h1>🎅 Mapa do Noel Perdido</h1><p>Cada casinha é alguém que comentou a cidade e seguiu.</p></header>
-<div class="cont"><div><b id="nc">0</b>casinhas</div><div><b id="nci">0</b>cidades</div><div><b id="nd">0</b>dias para o Natal</div></div>
+<header><h1>🎅 Mapa do Noel Perdido</h1><p>Cada casinha é alguém que comentou a cidade e seguiu. Brasileiro que mora fora também entra! 🌍</p></header>
+<div class="cont"><div><b id="nc">0</b>casinhas</div><div><b id="nci">0</b>cidades</div><div><b id="np">0</b>países</div><div><b id="nd">0</b>dias para o Natal</div></div>
 <main>
 <input id="q" type="search" placeholder="Ache seu @" autocomplete="off"><ul id="achados"></ul>
 <div id="map"></div>
 <div class="lista" id="lista"></div>
 <button id="sh">Compartilhar o mapa</button>
+<div class="ext">🌍 Mora fora do Brasil? Comente sua cidade e o país no vídeo e ganhe sua casinha no mapa!</div>
 <div class="fim">Comenta sua cidade no vídeo e siga para ganhar sua casinha 🏠</div>
-<p class="aviso">Quer sair do mapa? Comente SAIR em qualquer vídeo. Você sai na próxima atualização.<br>Só aparecem o @ e a cidade. 🛷 Cinza = na fila do trenó (falta seguir).</p>
+<p class="aviso">Quer sair do mapa? Comente SAIR em qualquer vídeo. Você sai na próxima atualização.<br>Só aparecem o @ e a cidade (e o país, se for de fora). 🛷 Cinza = na fila do trenó (falta seguir).</p>
 </main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script>
@@ -33,23 +35,24 @@ const $=id=>document.getElementById(id),esc=s=>String(s).replace(/[&<>"']/g,c=>(
 const norm=s=>s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"");
 const km=(a,b)=>{const r=x=>x*Math.PI/180,h=Math.sin(r(b.lat-a.lat)/2)**2+Math.cos(r(a.lat))*Math.cos(r(b.lat))*Math.sin(r(b.lon-a.lon)/2)**2;return 12742*Math.asin(Math.sqrt(h))};
 const hoje=new Date(),nat=new Date(hoje.getFullYear(),11,25);$("nd").textContent=Math.max(0,Math.ceil((nat-hoje)/864e5));
-const map=L.map("map").setView([-14.2,-51.9],4);
+const map=L.map("map").setView([-14.2,-51.9],4);map.setMinZoom(2);
 L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:12,attribution:"&copy; OpenStreetMap"}).addTo(map);
 let D=[],G={};
+const flag=g=>g.cc&&g.cc.length==2?String.fromCodePoint(...[...g.cc].map(c=>127397+c.charCodeAt())):"🌍",lugar=g=>g.pais?g.pais:g.uf;
 fetch("dados.json").then(r=>r.json()).then(d=>{D=d;
- d.forEach(p=>{const k=p.cidade+"|"+p.uf;(G[k]=G[k]||{lat:p.lat,lon:p.lon,cidade:p.cidade,uf:p.uf,ps:[]}).ps.push(p)});
- $("nc").textContent=d.filter(p=>p.segue).length;$("nci").textContent=Object.keys(G).length;
+ d.forEach(p=>{const k=p.cidade+"|"+p.uf+"|"+(p.pais||"");(G[k]=G[k]||{lat:p.lat,lon:p.lon,cidade:p.cidade,uf:p.uf,pais:p.pais,cc:p.cc,ps:[]}).ps.push(p)});
+ $("nc").textContent=d.filter(p=>p.segue).length;$("nci").textContent=Object.keys(G).length;$("np").textContent=1+new Set(d.filter(p=>p.pais).map(p=>p.pais)).size;
  Object.values(G).forEach(g=>{const on=g.ps.some(p=>p.segue);
-  g.m=L.marker([g.lat,g.lon],{icon:L.divIcon({className:"",html:'<div class="casa'+(on?"":" cinza")+'">🏠</div>',iconSize:[28,28],iconAnchor:[14,14]})}).addTo(map);
-  g.m.bindPopup(()=>"<b>"+esc(g.cidade)+" "+esc(g.uf)+"</b><br>"+g.ps.map(p=>esc(p.arroba)+(p.segue?"":" (na fila)")).join("<br>"));
+  g.m=L.marker([g.lat,g.lon],{icon:L.divIcon({className:"",html:'<div class="casa'+(on?"":" cinza")+'">🏠</div>'+(g.pais?'<div class="selo">'+flag(g)+'</div>':""),iconSize:[40,44],iconAnchor:[20,22]})}).addTo(map);
+  g.m.bindPopup(()=>"<b>"+esc(g.cidade)+" "+esc(lugar(g))+"</b>"+(g.pais?"<br><span class=selo>🌍 BR no exterior</span>":"")+"<br>"+g.ps.map(p=>esc(p.arroba)+(p.segue?"":" (na fila)")).join("<br>"));
   g.m.on("click",()=>mostra(g))});
 });
 function mostra(g){const l=$("lista"),per=Object.values(G).filter(h=>h!==g&&km(g,h)<=100);
  const chip=ps=>ps.map(p=>'<span class="'+(p.segue?"":"f")+'">'+esc(p.arroba)+"</span>").join("");
- l.innerHTML="<h2>Da sua cidade: "+esc(g.cidade)+" "+esc(g.uf)+"</h2>"+chip(g.ps)+"<h2>Perto de você (até 100 km)</h2>"+(per.length?per.map(h=>"<div><small>"+esc(h.cidade)+" "+esc(h.uf)+" ("+Math.round(km(g,h))+" km)</small><br>"+chip(h.ps)+"</div>").join(""):"<small>Ninguém por perto ainda. Chama alguém!</small>");}
+ l.innerHTML="<h2>Da sua cidade: "+esc(g.cidade)+" "+esc(lugar(g))+"</h2>"+chip(g.ps)+"<h2>Perto de você (até 100 km)</h2>"+(per.length?per.map(h=>"<div><small>"+esc(h.cidade)+" "+esc(lugar(h))+" ("+Math.round(km(g,h))+" km)</small><br>"+chip(h.ps)+"</div>").join(""):"<small>Ninguém por perto ainda. Chama alguém!</small>");}
 $("q").oninput=e=>{const t=norm(e.target.value.replace(/^@/,"")),ul=$("achados");ul.innerHTML="";if(t.length<2)return;
- D.filter(p=>norm(p.arroba).includes(t)).slice(0,8).forEach(p=>{const li=document.createElement("li");li.textContent=p.arroba+" - "+p.cidade+" "+p.uf+(p.segue?"":" (na fila)");
-  li.onclick=()=>{const g=G[p.cidade+"|"+p.uf];map.setView([g.lat,g.lon],9);g.m.openPopup();mostra(g);ul.innerHTML=""};ul.appendChild(li)})};
+ D.filter(p=>norm(p.arroba).includes(t)).slice(0,8).forEach(p=>{const li=document.createElement("li");li.textContent=p.arroba+" - "+p.cidade+" "+(p.pais||p.uf)+(p.segue?"":" (na fila)");
+  li.onclick=()=>{const g=G[p.cidade+"|"+p.uf+"|"+(p.pais||"")];map.setView([g.lat,g.lon],9);g.m.openPopup();mostra(g);ul.innerHTML=""};ul.appendChild(li)})};
 $("sh").onclick=async()=>{const d={title:"Mapa do Noel Perdido",text:"Achei meu @ no mapa do Noel Perdido! 🎅🏠",url:location.href};
  try{if(navigator.share)await navigator.share(d);else throw 0}catch(e){if(e&&e.name==="AbortError")return;try{await navigator.clipboard.writeText(location.href);$("sh").textContent="Link copiado!"}catch(_){prompt("Copie o link:",location.href)}}};
 </script></body></html>
