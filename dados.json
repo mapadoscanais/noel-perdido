@@ -110,6 +110,16 @@
 "segue": false
 },
 {
+"arroba": "@mlk_mates",
+"rede": "Instagram",
+"cidade": "Recife",
+"uf": "PE",
+"lat": -8.05,
+"lon": -34.88,
+"ep": 2,
+"segue": false
+},
+{
 "arroba": "@Encantado-rs_Mapping",
 "rede": "YouTube",
 "cidade": "Encantado",
@@ -228,16 +238,6 @@
 "lon": -60.02,
 "ep": 0,
 "segue": true
-},
-{
-"arroba": "@mlk_mates",
-"rede": "Instagram",
-"cidade": "Recife",
-"uf": "PE",
-"lat": -8.05,
-"lon": -34.88,
-"ep": 0,
-"segue": false
 },
 {
 "arroba": "@dlbernardo01",
