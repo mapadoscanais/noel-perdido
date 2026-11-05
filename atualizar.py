@@ -15,7 +15,7 @@ def exterior(cidade, pais):
     if k not in cache:
         time.sleep(max(0, 1.1 - (time.time() - _ult[0]))); _ult[0] = time.time()
         q = urllib.parse.urlencode(dict(format="json", limit=1, addressdetails=1, q=f"{cidade}, {pais}" if pais else cidade))
-        rq = urllib.request.Request("https://nominatim.openstreetmap.org/search?" + q, headers={"User-Agent": "noel-perdido-mapa/1.0 (amarivestore.github.io/noel-perdido)"})
+        rq = urllib.request.Request("https://nominatim.openstreetmap.org/search?" + q, headers={"User-Agent": "noel-perdido-mapa/1.0 (mapadoscanais.github.io/noel-perdido)"})
         try: r = json.load(urllib.request.urlopen(rq, timeout=20))
         except Exception as e: print("falhou", cidade, pais, e); return None
         if not r: print("não achei", cidade, pais); return None
