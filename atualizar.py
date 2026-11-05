@@ -31,7 +31,7 @@ out = []
 for a, p in pessoas.items():
     if a in sair: continue
     nome, uf, la, lo, _ = achar(p["cidade"], p["uf"])
-    ok = segue_arr.get(a, (chave(p["cidade"]), p["uf"]) in segue_cid and a not in segue_arr)
+    ok = segue_arr.get(a, p["rede"] == "Instagram" and (chave(p["cidade"]), p["uf"]) in segue_cid)
     out.append(dict(arroba=p["arroba"], rede=p["rede"], cidade=nome or p["cidade"], uf=uf, lat=la, lon=lo, ep=p["ep"], segue=ok))
 json.dump(out, open(os.path.join(AQUI, "dados.json"), "w"), ensure_ascii=False, indent=0)
 print(len(out), "pessoas,", sum(o["segue"] for o in out), "acesas,", len({(o["cidade"], o["uf"]) for o in out}), "cidades")
