@@ -120,13 +120,233 @@
 "segue": false
 },
 {
+"arroba": "@noemibernardotavares9652",
+"rede": "YouTube",
+"cidade": "Suzano",
+"uf": "SP",
+"lat": -23.54,
+"lon": -46.31,
+"ep": 3,
+"segue": true
+},
+{
+"arroba": "@samuelsantana486",
+"rede": "YouTube",
+"cidade": "Queimadas",
+"uf": "BA",
+"lat": -10.98,
+"lon": -39.63,
+"ep": 3,
+"segue": true
+},
+{
+"arroba": "@MaraFernandaMoraesFerreira",
+"rede": "YouTube",
+"cidade": "Cabo Verde",
+"uf": "MG",
+"lat": -21.47,
+"lon": -46.4,
+"ep": 3,
+"segue": true
+},
+{
+"arroba": "@OtavioMoraes-y4z",
+"rede": "YouTube",
+"cidade": "Monte Alegre do Sul",
+"uf": "SP",
+"lat": -22.68,
+"lon": -46.68,
+"ep": 3,
+"segue": true
+},
+{
+"arroba": "@enzoca_z4x",
+"rede": "Instagram",
+"cidade": "Ceará",
+"uf": "CE",
+"lat": -5.2,
+"lon": -39.5,
+"ep": 3,
+"segue": true
+},
+{
+"arroba": "@marcelogamer7626",
+"rede": "YouTube",
+"cidade": "Cascavel",
+"uf": "PR",
+"lat": -24.96,
+"lon": -53.46,
+"ep": 3,
+"segue": true
+},
+{
+"arroba": "@forcato_574",
+"rede": "Instagram",
+"cidade": "Paranaguá",
+"uf": "PR",
+"lat": -25.52,
+"lon": -48.51,
+"ep": 3,
+"segue": true
+},
+{
+"arroba": "@zefinhaMarinho-g7j",
+"rede": "YouTube",
+"cidade": "Currais Novos",
+"uf": "RN",
+"lat": -6.26,
+"lon": -36.52,
+"ep": 3,
+"segue": true
+},
+{
+"arroba": "@marcelaviana2780",
+"rede": "YouTube",
+"cidade": "Arniqueira",
+"uf": "DF",
+"lat": -15.86,
+"lon": -48.01,
+"ep": 3,
+"segue": true
+},
+{
+"arroba": "@sarahnascimento8077",
+"rede": "YouTube",
+"cidade": "Franco da Rocha",
+"uf": "SP",
+"lat": -23.32,
+"lon": -46.73,
+"ep": 3,
+"segue": true
+},
+{
+"arroba": "@Pedro14820",
+"rede": "YouTube",
+"cidade": "Portel",
+"uf": "PA",
+"lat": -1.94,
+"lon": -50.82,
+"ep": 3,
+"segue": true
+},
+{
+"arroba": "@SarannaEmíliaRibeiro",
+"rede": "YouTube",
+"cidade": "Caruaru",
+"uf": "PE",
+"lat": -8.28,
+"lon": -35.97,
+"ep": 3,
+"segue": true
+},
+{
+"arroba": "@Terra_Sorridente",
+"rede": "YouTube",
+"cidade": "Fortaleza",
+"uf": "CE",
+"lat": -3.73,
+"lon": -38.53,
+"ep": 3,
+"segue": true
+},
+{
+"arroba": "@livianeto7297",
+"rede": "YouTube",
+"cidade": "Lages",
+"uf": "SC",
+"lat": -27.82,
+"lon": -50.33,
+"ep": 3,
+"segue": true
+},
+{
+"arroba": "@victor_legal0909",
+"rede": "YouTube",
+"cidade": "Cidade Ocidental",
+"uf": "GO",
+"lat": -16.08,
+"lon": -47.93,
+"ep": 3,
+"segue": true
+},
+{
+"arroba": "@DaviMorelli-z1j",
+"rede": "YouTube",
+"cidade": "Atílio Vivácqua",
+"uf": "ES",
+"lat": -20.91,
+"lon": -41.19,
+"ep": 3,
+"segue": true
+},
+{
+"arroba": "@lugusvi8815",
+"rede": "YouTube",
+"cidade": "São José dos Campos",
+"uf": "SP",
+"lat": -23.18,
+"lon": -45.88,
+"ep": 3,
+"segue": true
+},
+{
 "arroba": "@Encantado-rs_Mapping",
 "rede": "YouTube",
 "cidade": "Encantado",
 "uf": "RS",
 "lat": -29.24,
 "lon": -51.87,
-"ep": 0,
+"ep": 3,
+"segue": true
+},
+{
+"arroba": "@LagoaDoOuroMapping",
+"rede": "YouTube",
+"cidade": "Guarulhos",
+"uf": "SP",
+"lat": -23.46,
+"lon": -46.53,
+"ep": 3,
+"segue": true
+},
+{
+"arroba": "@PASTEL_FODA",
+"rede": "YouTube",
+"cidade": "Parauapebas",
+"uf": "PA",
+"lat": -6.07,
+"lon": -49.9,
+"ep": 3,
+"segue": true
+},
+{
+"arroba": "@Davisilvagamer-g2e",
+"rede": "YouTube",
+"cidade": "São Paulo",
+"uf": "SP",
+"lat": -23.55,
+"lon": -46.63,
+"ep": 3,
+"segue": true
+},
+{
+"arroba": "@janete.afonso.77",
+"rede": "Instagram",
+"cidade": "Goiânia",
+"uf": "GO",
+"lat": -16.68,
+"lon": -49.25,
+"ep": 3,
+"segue": false
+},
+{
+"arroba": "@sarahrafaellyrodrigues",
+"rede": "Instagram",
+"cidade": "São Luís",
+"uf": "MA",
+"lat": -2.53,
+"lon": -44.3,
+"ep": 3,
 "segue": false
 },
 {
@@ -258,125 +478,5 @@
 "lon": -52.41,
 "ep": 0,
 "segue": true
-},
-{
-"arroba": "@zefinhaMarinho-g7j",
-"rede": "YouTube",
-"cidade": "Currais Novos",
-"uf": "RN",
-"lat": -6.26,
-"lon": -36.52,
-"ep": 0,
-"segue": false
-},
-{
-"arroba": "@marcelaviana2780",
-"rede": "YouTube",
-"cidade": "Arniqueira",
-"uf": "DF",
-"lat": -15.86,
-"lon": -48.01,
-"ep": 0,
-"segue": false
-},
-{
-"arroba": "@noemibernardotavares9652",
-"rede": "YouTube",
-"cidade": "Suzano",
-"uf": "SP",
-"lat": -23.54,
-"lon": -46.31,
-"ep": 0,
-"segue": false
-},
-{
-"arroba": "@sarahnascimento8077",
-"rede": "YouTube",
-"cidade": "Franco da Rocha",
-"uf": "SP",
-"lat": -23.32,
-"lon": -46.73,
-"ep": 0,
-"segue": false
-},
-{
-"arroba": "@Pedro14820",
-"rede": "YouTube",
-"cidade": "Portel",
-"uf": "PA",
-"lat": -1.94,
-"lon": -50.82,
-"ep": 0,
-"segue": false
-},
-{
-"arroba": "@SarannaEmíliaRibeiro",
-"rede": "YouTube",
-"cidade": "Caruaru",
-"uf": "PE",
-"lat": -8.28,
-"lon": -35.97,
-"ep": 0,
-"segue": false
-},
-{
-"arroba": "@Terra_Sorridente",
-"rede": "YouTube",
-"cidade": "Fortaleza",
-"uf": "CE",
-"lat": -3.73,
-"lon": -38.53,
-"ep": 0,
-"segue": false
-},
-{
-"arroba": "@livianeto7297",
-"rede": "YouTube",
-"cidade": "Lages",
-"uf": "SC",
-"lat": -27.82,
-"lon": -50.33,
-"ep": 0,
-"segue": false
-},
-{
-"arroba": "@victor_legal0909",
-"rede": "YouTube",
-"cidade": "Cidade Ocidental",
-"uf": "GO",
-"lat": -16.08,
-"lon": -47.93,
-"ep": 0,
-"segue": false
-},
-{
-"arroba": "@samuelsantana486",
-"rede": "YouTube",
-"cidade": "Queimadas",
-"uf": "BA",
-"lat": -10.98,
-"lon": -39.63,
-"ep": 0,
-"segue": false
-},
-{
-"arroba": "@DaviMorelli-z1j",
-"rede": "YouTube",
-"cidade": "Atílio Vivácqua",
-"uf": "ES",
-"lat": -20.91,
-"lon": -41.19,
-"ep": 0,
-"segue": false
-},
-{
-"arroba": "@lugusvi8815",
-"rede": "YouTube",
-"cidade": "São José dos Campos",
-"uf": "SP",
-"lat": -23.18,
-"lon": -45.88,
-"ep": 0,
-"segue": false
 }
 ]

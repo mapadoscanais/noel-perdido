@@ -39,7 +39,7 @@ for f in sorted(glob.glob(os.path.join(RAIZ, "episodios", "ep[0-9]*", "ep.json")
         n, ok = p["nome"], bool(p.get("segue"))
         if n.startswith("@"):
             segue_arr[n.lower()] = ok
-            if p.get("cidade"): pessoas.setdefault(n.lower(), dict(arroba=n, rede="Instagram", cidade=p["cidade"], uf=p.get("uf", ""), ep=ep_de(f)))
+            if p.get("cidade"): pessoas.setdefault(n.lower(), dict(arroba=n, rede=p.get("rede", "Instagram"), cidade=p["cidade"], uf=p.get("uf", ""), ep=ep_de(f)))
         elif ok: segue_cid.add((chave(p["cidade"]), p.get("uf", "")))
 
 # 2) comentários (cidade vem do comentário; sem cidade não entra)
