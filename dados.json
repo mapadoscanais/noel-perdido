@@ -440,6 +440,226 @@
 "segue": true
 },
 {
+"arroba": "@Railucca9910",
+"rede": "YouTube",
+"cidade": "Santos",
+"uf": "SP",
+"lat": -23.96,
+"lon": -46.33,
+"ep": 4,
+"segue": true
+},
+{
+"arroba": "@Smurf-country",
+"rede": "YouTube",
+"cidade": "Caicó",
+"uf": "RN",
+"lat": -6.46,
+"lon": -37.1,
+"ep": 4,
+"segue": true
+},
+{
+"arroba": "@Heitor-r3l4m",
+"rede": "YouTube",
+"cidade": "Caetité",
+"uf": "BA",
+"lat": -14.07,
+"lon": -42.48,
+"ep": 4,
+"segue": true
+},
+{
+"arroba": "@jeancarlosjfs1",
+"rede": "YouTube",
+"cidade": "Águas Lindas de Goiás",
+"uf": "GO",
+"lat": -15.76,
+"lon": -48.28,
+"ep": 4,
+"segue": true
+},
+{
+"arroba": "@mucaplays",
+"rede": "YouTube",
+"cidade": "Forquilhinha",
+"uf": "SC",
+"lat": -28.75,
+"lon": -49.47,
+"ep": 4,
+"segue": true
+},
+{
+"arroba": "@asoares26",
+"rede": "YouTube",
+"cidade": "São Roque",
+"uf": "SP",
+"lat": -23.53,
+"lon": -47.14,
+"ep": 4,
+"segue": true
+},
+{
+"arroba": "@yagoalmeida6454",
+"rede": "YouTube",
+"cidade": "Campina Grande",
+"uf": "PB",
+"lat": -7.23,
+"lon": -35.88,
+"ep": 4,
+"segue": true
+},
+{
+"arroba": "@Ribeiro_TCG",
+"rede": "YouTube",
+"cidade": "Caçapava",
+"uf": "SP",
+"lat": -23.1,
+"lon": -45.71,
+"ep": 4,
+"segue": true
+},
+{
+"arroba": "@entregadeexames-x6t",
+"rede": "YouTube",
+"cidade": "Teresina",
+"uf": "PI",
+"lat": -5.09,
+"lon": -42.8,
+"ep": 4,
+"segue": true
+},
+{
+"arroba": "@lagoooooona",
+"rede": "YouTube",
+"cidade": "Apucarana",
+"uf": "PR",
+"lat": -23.55,
+"lon": -51.46,
+"ep": 4,
+"segue": true
+},
+{
+"arroba": "@vanessawaschenshiky5877",
+"rede": "YouTube",
+"cidade": "Santos",
+"uf": "SP",
+"lat": -23.96,
+"lon": -46.33,
+"ep": 4,
+"segue": true
+},
+{
+"arroba": "@DarlannGabriel",
+"rede": "YouTube",
+"cidade": "Tenente Laurentino Cruz",
+"uf": "RN",
+"lat": -6.14,
+"lon": -36.72,
+"ep": 4,
+"segue": true
+},
+{
+"arroba": "@ezpiova",
+"rede": "YouTube",
+"cidade": "Rio de Janeiro",
+"uf": "RJ",
+"lat": -22.91,
+"lon": -43.17,
+"ep": 4,
+"segue": true
+},
+{
+"arroba": "@davi_x10098",
+"rede": "YouTube",
+"cidade": "Belém",
+"uf": "PA",
+"lat": -1.46,
+"lon": -48.49,
+"ep": 4,
+"segue": true
+},
+{
+"arroba": "@AntonioGabrieldaCosta-n8c",
+"rede": "YouTube",
+"cidade": "Duque de Caxias",
+"uf": "RJ",
+"lat": -22.79,
+"lon": -43.31,
+"ep": 4,
+"segue": true
+},
+{
+"arroba": "@gessicasobreira9634",
+"rede": "YouTube",
+"cidade": "Uiraúna",
+"uf": "PB",
+"lat": -6.52,
+"lon": -38.41,
+"ep": 4,
+"segue": true
+},
+{
+"arroba": "@evaneves8644",
+"rede": "YouTube",
+"cidade": "Iuiú",
+"uf": "BA",
+"lat": -14.41,
+"lon": -43.56,
+"ep": 4,
+"segue": true
+},
+{
+"arroba": "@Arthur_edits-b2q",
+"rede": "YouTube",
+"cidade": "Cascavel",
+"uf": "PR",
+"lat": -24.96,
+"lon": -53.46,
+"ep": 4,
+"segue": true
+},
+{
+"arroba": "@Gustavo-ry8yr",
+"rede": "YouTube",
+"cidade": "Ouro Preto",
+"uf": "MG",
+"lat": -20.39,
+"lon": -43.5,
+"ep": 4,
+"segue": true
+},
+{
+"arroba": "@roaring_knight-h1x",
+"rede": "YouTube",
+"cidade": "Contagem",
+"uf": "MG",
+"lat": -19.93,
+"lon": -44.05,
+"ep": 4,
+"segue": true
+},
+{
+"arroba": "@Joaquim-k9c",
+"rede": "YouTube",
+"cidade": "Barroquinha",
+"uf": "CE",
+"lat": -3.02,
+"lon": -41.14,
+"ep": 4,
+"segue": true
+},
+{
+"arroba": "@garrafa_pet_2.0",
+"rede": "YouTube",
+"cidade": "Sarandi",
+"uf": "PR",
+"lat": -23.44,
+"lon": -51.87,
+"ep": 4,
+"segue": true
+},
+{
 "arroba": "@mikellynatalina",
 "rede": "Instagram",
 "cidade": "Maragogi",
@@ -578,5 +798,17 @@
 "lon": -52.41,
 "ep": 0,
 "segue": true
+},
+{
+"arroba": "@JoséCunha-w7l",
+"rede": "YouTube",
+"cidade": "Famalicão",
+"uf": "",
+"pais": "Portugal",
+"cc": "PT",
+"lat": 41.41,
+"lon": -8.49,
+"ep": 4,
+"segue": false
 }
 ]
