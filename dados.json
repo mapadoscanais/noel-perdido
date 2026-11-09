@@ -670,6 +670,76 @@
 "segue": false
 },
 {
+"arroba": "@cj_paulo355",
+"rede": "Instagram",
+"cidade": "Lagoa Salgada",
+"uf": "RN",
+"lat": -6.12,
+"lon": -35.47,
+"ep": 5,
+"segue": true
+},
+{
+"arroba": "@nao_posso_disser_o_nome",
+"rede": "TikTok",
+"cidade": "Chã de Cruz",
+"uf": "PE",
+"lat": -7.93,
+"lon": -35.27,
+"ep": 5,
+"segue": true
+},
+{
+"arroba": "@yozhiksponge",
+"rede": "YouTube",
+"cidade": "Rio de Janeiro",
+"uf": "RJ",
+"lat": -22.91,
+"lon": -43.17,
+"ep": 5,
+"segue": true
+},
+{
+"arroba": "@marciarenatakoehler7119",
+"rede": "YouTube",
+"cidade": "Estância Velha",
+"uf": "RS",
+"lat": -29.65,
+"lon": -51.17,
+"ep": 5,
+"segue": true
+},
+{
+"arroba": "@Katia-n7l3x",
+"rede": "YouTube",
+"cidade": "Rio Grande",
+"uf": "RS",
+"lat": -32.03,
+"lon": -52.1,
+"ep": 5,
+"segue": true
+},
+{
+"arroba": "@andrezim_125",
+"rede": "Instagram",
+"cidade": "São Vicente do Seridó",
+"uf": "PB",
+"lat": -6.85,
+"lon": -36.41,
+"ep": 5,
+"segue": false
+},
+{
+"arroba": "@gabimartins_25",
+"rede": "Instagram",
+"cidade": "Teresópolis",
+"uf": "RJ",
+"lat": -22.41,
+"lon": -42.97,
+"ep": 5,
+"segue": false
+},
+{
 "arroba": "@kaua_busca.pe",
 "rede": "Instagram",
 "cidade": "São José dos Campos",
@@ -809,6 +879,18 @@
 "lat": 41.41,
 "lon": -8.49,
 "ep": 4,
+"segue": false
+},
+{
+"arroba": "@Inomoja8nome",
+"rede": "YouTube",
+"cidade": "Macau",
+"uf": "",
+"pais": "中国",
+"cc": "CN",
+"lat": 22.18,
+"lon": 113.55,
+"ep": 5,
 "segue": false
 }
 ]
