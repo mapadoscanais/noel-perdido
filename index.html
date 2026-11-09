@@ -19,7 +19,7 @@ button{background:var(--g);color:#fff;border:0;border-radius:12px;padding:12px 1
 .aviso{font-size:13px;text-align:center;opacity:.8}
 </style></head><body>
 <header><h1>🎅 Mapa do Noel Perdido</h1><p>Cada casinha é alguém que comentou a cidade e seguiu. Brasileiro que mora fora também entra! 🌍</p></header>
-<div class="cont"><div><b id="nc">0</b>casinhas</div><div><b id="nci">0</b>cidades</div><div><b id="np">0</b>países</div><div><b id="nd">0</b>dias para o Natal</div></div>
+<div class="cont" style="flex-wrap:wrap"><div><b id="nc">0</b>casinhas</div><div><b id="nci">0</b>cidades</div><div><b id="np">0</b>países</div><div><b id="nd">0</b>dias para o Natal</div></div>
 <main>
 <input id="q" type="search" placeholder="Ache seu @" autocomplete="off"><ul id="achados"></ul>
 <div id="map"></div>
@@ -42,6 +42,7 @@ const flag=g=>g.cc&&g.cc.length==2?String.fromCodePoint(...[...g.cc].map(c=>1273
 fetch("dados.json").then(r=>r.json()).then(d=>{D=d;
  d.forEach(p=>{const k=p.cidade+"|"+p.uf+"|"+(p.pais||"");(G[k]=G[k]||{lat:p.lat,lon:p.lon,cidade:p.cidade,uf:p.uf,pais:p.pais,cc:p.cc,ps:[]}).ps.push(p)});
  $("nc").textContent=d.filter(p=>p.segue).length;$("nci").textContent=Object.keys(G).length;$("np").textContent=1+new Set(d.filter(p=>p.pais).map(p=>p.pais)).size;
+ const fora=Object.values(G).filter(g=>g.pais);if(fora.length)map.fitBounds(L.latLngBounds(Object.values(G).map(g=>[g.lat,g.lon])),{padding:[24,24]});
  Object.values(G).forEach(g=>{const on=g.ps.some(p=>p.segue);
   g.m=L.marker([g.lat,g.lon],{icon:L.divIcon({className:"",html:'<div class="casa'+(on?"":" cinza")+'">🏠</div>'+(g.pais?'<div class="selo">'+flag(g)+'</div>':""),iconSize:[40,44],iconAnchor:[20,22]})}).addTo(map);
   g.m.bindPopup(()=>"<b>"+esc(g.cidade)+" "+esc(lugar(g))+"</b>"+(g.pais?"<br><span class=selo>🌍 BR no exterior</span>":"")+"<br>"+g.ps.map(p=>esc(p.arroba)+(p.segue?"":" (na fila)")).join("<br>"));

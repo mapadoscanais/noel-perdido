@@ -4,7 +4,7 @@ Uso: python3 site/atualizar.py [--sem-push]. Regras: só cidade (nunca endereço
 import json, glob, os, re, subprocess, sys, time, urllib.request, urllib.parse
 AQUI = os.path.dirname(os.path.abspath(__file__)); RAIZ = os.path.dirname(AQUI)
 sys.path.insert(0, os.path.join(RAIZ, "molde"))
-from cidades import achar, chave
+from cidades import achar, chave, NOME_PAIS
 
 CACHE = os.path.join(AQUI, "cidades_exterior.json")
 cache = json.load(open(CACHE)) if os.path.exists(CACHE) else {}
@@ -53,6 +53,10 @@ for f in sorted(glob.glob(os.path.join(RAIZ, "comentarios-*.json")) + glob.glob(
 out = []
 for a, p in pessoas.items():
     if a in sair: continue
+    m = achar(p["cidade"], p["uf"], p.get("pais", ""))
+    if m[4].startswith("mundo"):  # tabela do mundo em molde/cidades.py (nome em português, sem consultar a internet)
+        out.append(dict(arroba=p["arroba"], rede=p["rede"], cidade=m[0] or m[1], uf="", pais=m[1], cc=NOME_PAIS[chave(m[1])], lat=m[2], lon=m[3], ep=p["ep"], segue=segue_arr.get(a, False)))
+        continue
     ex = separa_exterior(p["cidade"], p["uf"], p.get("pais", ""))
     if ex:
         g = exterior(*ex)

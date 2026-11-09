@@ -877,7 +877,7 @@
 "pais": "Portugal",
 "cc": "PT",
 "lat": 41.41,
-"lon": -8.49,
+"lon": -8.52,
 "ep": 4,
 "segue": false
 },
@@ -886,9 +886,9 @@
 "rede": "YouTube",
 "cidade": "Macau",
 "uf": "",
-"pais": "中国",
+"pais": "China",
 "cc": "CN",
-"lat": 22.18,
+"lat": 22.2,
 "lon": 113.55,
 "ep": 5,
 "segue": false
