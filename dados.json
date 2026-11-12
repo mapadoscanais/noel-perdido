@@ -886,6 +886,26 @@
 "segue": true
 },
 {
+"arroba": "@GabrielLimaLoeff",
+"rede": "Instagram",
+"cidade": "Palmas",
+"uf": "TO",
+"lat": -10.18,
+"lon": -48.33,
+"ep": 9,
+"segue": true
+},
+{
+"arroba": "@ValquiriaCoelho-z1i",
+"rede": "Instagram",
+"cidade": "Itabira",
+"uf": "MG",
+"lat": -19.62,
+"lon": -43.23,
+"ep": 9,
+"segue": true
+},
+{
 "arroba": "@kaua_busca.pe",
 "rede": "Instagram",
 "cidade": "São José dos Campos",
@@ -1014,5 +1034,65 @@
 "lon": -52.41,
 "ep": 0,
 "segue": true
+},
+{
+"arroba": "@itadorii14",
+"rede": "YouTube",
+"cidade": "Pará de Minas",
+"uf": "MG",
+"lat": -19.86,
+"lon": -44.61,
+"ep": 9,
+"segue": false
+},
+{
+"arroba": "@PedroBlox_Oficial102",
+"rede": "YouTube",
+"cidade": "Boa Vista",
+"uf": "PB",
+"lat": -7.12,
+"lon": -34.86,
+"ep": 9,
+"segue": false
+},
+{
+"arroba": "@Bernardo_oficial-h3s",
+"rede": "YouTube",
+"cidade": "Ponte Nova",
+"uf": "MG",
+"lat": -20.42,
+"lon": -42.91,
+"ep": 9,
+"segue": false
+},
+{
+"arroba": "@BernardoRibeiro485",
+"rede": "YouTube",
+"cidade": "Uberaba",
+"uf": "MG",
+"lat": -19.75,
+"lon": -47.93,
+"ep": 9,
+"segue": false
+},
+{
+"arroba": "@luizmodigamer2348",
+"rede": "YouTube",
+"cidade": "Sorocaba",
+"uf": "SP",
+"lat": -23.5,
+"lon": -47.46,
+"ep": 9,
+"segue": false
+},
+{
+"arroba": "@NicolasGabriel0511",
+"rede": "YouTube",
+"cidade": "Realeza",
+"uf": "PR",
+"lat": -25.43,
+"lon": -49.27,
+"ep": 9,
+"segue": false
 }
 ]
