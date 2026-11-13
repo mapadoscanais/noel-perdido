@@ -1094,5 +1094,15 @@
 "lon": -49.27,
 "ep": 9,
 "segue": false
+},
+{
+"arroba": "@AugustoRodrigues-w2g",
+"rede": "YouTube",
+"cidade": "Cardoso",
+"uf": "SP",
+"lat": -23.55,
+"lon": -46.63,
+"ep": 10,
+"segue": false
 }
 ]
