@@ -1104,5 +1104,25 @@
 "lon": -46.63,
 "ep": 10,
 "segue": false
+},
+{
+"arroba": "@thuanepereirafeitosasantos520",
+"rede": "YouTube",
+"cidade": "Balsas",
+"uf": "MA",
+"lat": -7.53,
+"lon": -46.04,
+"ep": 11,
+"segue": false
+},
+{
+"arroba": "@K12-h1p",
+"rede": "YouTube",
+"cidade": "São Mateus",
+"uf": "ES",
+"lat": -18.72,
+"lon": -39.86,
+"ep": 11,
+"segue": false
 }
 ]
