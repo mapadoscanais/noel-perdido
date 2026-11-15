@@ -1124,5 +1124,37 @@
 "lon": -39.86,
 "ep": 11,
 "segue": false
+},
+{
+"arroba": "@LagoonaDraculauraBlue",
+"rede": "YouTube",
+"cidade": "Eslováquia",
+"uf": "",
+"pais": "Eslováquia",
+"cc": "SK",
+"lat": 48.15,
+"lon": 17.11,
+"ep": 12,
+"segue": false
+},
+{
+"arroba": "@Jãoxlr8",
+"rede": "YouTube",
+"cidade": "Fortaleza",
+"uf": "CE",
+"lat": -3.73,
+"lon": -38.53,
+"ep": 12,
+"segue": false
+},
+{
+"arroba": "@teddom5995",
+"rede": "YouTube",
+"cidade": "Manaus",
+"uf": "AM",
+"lat": -3.12,
+"lon": -60.02,
+"ep": 12,
+"segue": false
 }
 ]
