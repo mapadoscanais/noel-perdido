@@ -906,6 +906,18 @@
 "segue": true
 },
 {
+"arroba": "@LagoonaDraculauraBlue",
+"rede": "Instagram",
+"cidade": "Eslováquia",
+"uf": "",
+"pais": "Eslováquia",
+"cc": "SK",
+"lat": 48.15,
+"lon": 17.11,
+"ep": 12,
+"segue": true
+},
+{
 "arroba": "@kaua_busca.pe",
 "rede": "Instagram",
 "cidade": "São José dos Campos",
@@ -1123,18 +1135,6 @@
 "lat": -18.72,
 "lon": -39.86,
 "ep": 11,
-"segue": false
-},
-{
-"arroba": "@LagoonaDraculauraBlue",
-"rede": "YouTube",
-"cidade": "Eslováquia",
-"uf": "",
-"pais": "Eslováquia",
-"cc": "SK",
-"lat": 48.15,
-"lon": 17.11,
-"ep": 12,
 "segue": false
 },
 {
