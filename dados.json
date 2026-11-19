@@ -918,6 +918,16 @@
 "segue": true
 },
 {
+"arroba": "@K12-h1p",
+"rede": "Instagram",
+"cidade": "São Mateus",
+"uf": "ES",
+"lat": -18.72,
+"lon": -39.86,
+"ep": 16,
+"segue": false
+},
+{
 "arroba": "@kaua_busca.pe",
 "rede": "Instagram",
 "cidade": "São José dos Campos",
@@ -1124,16 +1134,6 @@
 "uf": "MA",
 "lat": -7.53,
 "lon": -46.04,
-"ep": 11,
-"segue": false
-},
-{
-"arroba": "@K12-h1p",
-"rede": "YouTube",
-"cidade": "São Mateus",
-"uf": "ES",
-"lat": -18.72,
-"lon": -39.86,
 "ep": 11,
 "segue": false
 },
