@@ -928,6 +928,16 @@
 "segue": false
 },
 {
+"arroba": "@BernardoRibeiro485",
+"rede": "Instagram",
+"cidade": "Uberaba",
+"uf": "MG",
+"lat": -19.75,
+"lon": -47.93,
+"ep": 17,
+"segue": true
+},
+{
 "arroba": "@kaua_busca.pe",
 "rede": "Instagram",
 "cidade": "São José dos Campos",
@@ -1084,16 +1094,6 @@
 "uf": "MG",
 "lat": -20.42,
 "lon": -42.91,
-"ep": 9,
-"segue": false
-},
-{
-"arroba": "@BernardoRibeiro485",
-"rede": "YouTube",
-"cidade": "Uberaba",
-"uf": "MG",
-"lat": -19.75,
-"lon": -47.93,
 "ep": 9,
 "segue": false
 },
